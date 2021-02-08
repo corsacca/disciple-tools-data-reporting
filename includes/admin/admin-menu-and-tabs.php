@@ -76,7 +76,7 @@ class DT_Data_Reporting_Menu {
             code {
               display: block;
             }
-            
+
             #poststuff h2 {
               padding-left: 0;
               font-size: 1.2rem;
@@ -102,10 +102,10 @@ class DT_Data_Reporting_Menu {
               font-size: 0.8rem;
               line-height: 2rem;
             }
-            
+
             .export-logs {
               padding: .5rem 0;
-            }            
+            }
             .export-logs .result {
               font-weight: bold;
               background-color: lightgray;
@@ -115,7 +115,7 @@ class DT_Data_Reporting_Menu {
               background-color: lightgray;
               font-family: monospace;
               padding: 1rem;
-            }            
+            }
             ul.api-log li {
               list-style-type: \'>\';
               padding-left: 0.5rem;
@@ -136,7 +136,6 @@ class DT_Data_Reporting_Menu {
      * @since 0.1
      */
     public function register_menu() {
-        add_menu_page( __( 'Extensions (DT)', 'disciple_tools' ), __( 'Extensions (DT)', 'disciple_tools' ), 'manage_dt', 'dt_extensions', array( $this, 'extensions_menu' ), 'dashicons-admin-generic', 59 );
         add_submenu_page( 'dt_extensions', __( 'Data Reporting', 'DT_Data_Reporting' ), __( 'Data Reporting', 'DT_Data_Reporting' ), 'manage_dt', $this->token, array( $this, 'content' ) );
     }
 
